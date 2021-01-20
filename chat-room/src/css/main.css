@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  margin:0;
+  font-family: Montserrat;
+}
+
+.login-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  background: linear-gradient(45deg, #a098e7, #f3f3dc);
+}
+.login-container img, .welcome-container img{
+  margin-top: -4rem;
+}
+
+.login-container h2{
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  
+}
+
+.login{
+  text-align: center;
+}
+.login-button{
+  padding: 1rem 2rem;
+  margin-bottom: .5rem;
+  border: none;
+  outline:none;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-shadow: #000 2px 2px 5px;
+}
+.github{
+  background: #82d465;
+  
+}
+.facebook{
+  background: #3864a3;
+  
+}
+.twitter{
+  background: #5ea9dd;
+ 
+}
+
+.welcome-container{
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(45deg, #a098e7, #f3f3dc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-container p{
+  font-size: 1.1rem;
+  letter-spacing: .8px;
+}
+.welcome-tagline{
+  font-size: 1rem !important;
+}
+
+.input-username{
+  font-size: 1.1rem;
+  margin-bottom:2rem;
+  border: none;
+  outline: none;
+  padding: .5rem;
+  background-color: white;
+  box-shadow: #000 2px 2px 5px;
+  font-weight: 600;
+
+}
+
+.submit-username{
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: #000 2px 2px 5px;
+}
+
+.welcome-back{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(45deg, #a098e7, #f3f3dc);
+}
+.app-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(116, 160, 189, 0.3);
+}
+
+.logout-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.logout-container h3{
+  font-weight: 400;
+  font-size: 1rem;
+  margin:0 0 1rem 0;;
+
+}
+.logout{
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: #000 2px 2px 5px;
+  margin-bottom: .5rem;
+  background-color: rgb(243, 111, 111);
+  margin-top: 1rem;
+}
+
+.form-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15vh;
+}
+
+textarea{
+  position: relative;
+  width: 96%;
+  height: 100%;
+  padding: 1rem 5rem 1rem 1rem;
+  outline: none;
+  border:none;
+  background-color: #F4F3F5;
+  font-size: 1.1rem;
+}
+
+.send-message{
+  position: absolute;
+  top:5vh;
+  right: 15px;
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: #000 2px 2px 5px;
+  background-color: #79D7C4;
+  color: #000;
+  
+
+}
+
+.messages{
+  flex:1;
+  overflow: scroll;
+  word-break: break-word;
+  list-style: none;
+  padding: 1rem 2rem;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.sent-message-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.recieved-message-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.message{
+  padding: .5rem 1rem;
+  text-align: left;
+  font: normal normal 14px/20px Montserrat;
+  opacity: 1;
+  margin-bottom: .9rem;
+  letter-spacing: .8px;
+  margin-top: .3rem;
+  font-weight: 500;
+  
+}
+.sent-message{
+  background: #77599e 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  border-radius: 1rem 0rem 1rem 1rem;
+}
+.recieved-message{
+  background-color: #ffffff;
+  color: #211138;
+  border-radius: 0 1rem 1rem 1rem;
+}
+
+.username{
+  font: normal normal bold 12px/15px Montserrat;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 1;
+  margin:0;
+  font-weight: 800;
+}
+
+.scroll-to-end{
+  content:'';
+  float: left;
+  clear: both;
+}
